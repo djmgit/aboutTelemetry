@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="aboutTelemetry.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="sidebar" id="sidebar">
+				<span id="close" class="close">
+					<img src="icons/close.png">
+				</span>
+				<div class="sidebar-container">
+					<div class="telemetry-settings category" id="telemetry-settings">
+						Telemetry Settings
+					</div>	
+					<div class="general-data category" id="general-data">
+						General Data
+					</div>
+					<div class="environment-data category" id="environment-data">
+						Environment Data
+					</div>
+					<div class="session-information category" id="session-information">
+						Session Information
+					</div>
+					<div class="scalars category" id="scalars">
+						Scalars
+					</div>
+					<div class="keyed-scalars category" id="keyed-scalars">
+						Keyed Scalars 
+					</div>
+					<div class="histograms category" id="histograms">
+						Histograms
+					</div>
+					<div class="keyed-histograms category" id="keyed-histograms">
+						Keyed Histograms
+					</div>
+					<div class="simple-measurements category" id="simple-measurements">
+						Simple Measurements
+					</div>
+					<div class="telemetry-log category" class="telemetry-log">
+						Telemetry Log
+					</div>
+					<div id="slow-sql-statements " class="slow-sql-statements category">
+						Slow SQL Statements
+					</div>
+					<div class="browser-hangs category" id="browser-hangs">
+						Browser Hangs
+					</div>
+					<div class="thread-hangs category" id="thread-hangs">
+						Thread Hangs
+					</div>
+					<div class="late-writes category" id="late-writes">
+						Late Writes
+					</div>
+					<div class="addon-details category" id="addon-details">
+						Add-on Details
+					</div>
+					<div class="histograms-collected-by-addons category" id="histograms-collected-by-addons">
+						Histograms Collected by Add-ons
+					</div>
+				</div>
+			</div>
+			<div class="main-content" id="main-content">
+				<div id="menu" class="menu">
+					<img src="icons/menu.png" class="menu-icon">
+				</div>
+				<div class="telemetry-settings-content selected-content-body" id="telemetry-settings">
+					<div class="header">
+						<h1> Telemetry Data </h1>
+					</div>
+					<div class="subtitle">
+						 <strong> This page shows the information about performance, hardware, usage and customizations collected by Telemetry. This information is submitted to Mozilla to help improve Mozilla Firefox. </strong>
+					</div>
+					<div class="data-pref" id="data-pref">
+						<div class="upload-pref data-pref-item">
+							<label> FHR data upload is <span style="color: green;">enabled.</span> </label>
+							<a href="#"> Change </a>
+						</div>
+						<div class="recording-pref data-pref-item">
+							<label> Extended Telemetry recording is <span style="color: red;">disabled.</span> </label> 
+							<a href="#"> Change </a>
+						</div>
+					</div>
+					<div class="splitter">
+					</div>
+					<div class="ping-data-source">
+						<div class="ping-header">
+							<h2> Ping data source </h2>
+						</div>
+						<div class="ping-options">
+							<div class="current-ping-data ping-option">
+								<input type="radio" name="ping-option-select" value="current" checked="checked">
+								<label> Current ping data </label>
+							</div>
+							<div class="archived-ping-data ping-option">
+								<input type="radio" name="ping-option-select" value="archive">
+								<label> Current ping data </label>
+							</div>
+						</div>
+					</div>
+					<div class="splitter-alt">
+					</div>
+					<div class="ping-data-source">
+						<div class="ping-header">
+							<h2> Ping data display </h2>
+						</div>
+						<div class="ping-options">
+							<div class="current-ping-data ping-option">
+								<input type="radio" name="ping-data-select" value="current" checked="checked">
+								<label> Structred </label>
+							</div>
+							<div class="archived-ping-data ping-option">
+								<input type="radio" name="ping-data-select" value="archive">
+								<label> Raw JSON </label>
+							</div>
+						</div>
+					</div>
+					<div class="splitter-alt">
+					</div>
+					<div class="subsession-data">
+						<input type="checkbox" name="subsession-data-select" checked="checked">
+						<label> Show subsession data </label>
+					</div>
+					<div class="parent-payload">
+						<select class="payload-options" disabled="disabled">
+							<option> Parent Payload </option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

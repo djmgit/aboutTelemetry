@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    font-family: "Arial";
+}
+
+body {
+	overflow-y: hidden;
+}
+
+.container {
+	display: flex;
+	align-items	: vertical;
+	width:100%;
+	height: 100%;
+}
+
+.sidebar {
+	background-color: rgb(66, 79, 90);
+	color: white;
+	height: 100%;
+	width: 22%;
+	overflow-y: auto;
+}
+
+.sidebar-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	align-content: space-between;
+	margin-bottom: 50px;
+}
+
+.close {
+	float: right;
+	margin-top: 8px;
+	margin-right: 8px;
+	display: none;
+}
+
+.menu {
+	position: fixed;
+	left:20px;
+	top:10px;
+	display: none;
+}
+
+.category {
+	padding-left: 15px;
+	font-size: 18px;
+	color: #eceff1;
+	padding-top:10px;
+	padding-bottom: 10px;
+	user-select: none;
+}
+
+.category:hover {
+	background-color: #78909c;
+}
+
+.telemetry-settings {
+	background-color: #263238;
+}
+
+.main-content {
+	background-color: white;
+	overflow-y: auto;
+}
+
+.header {
+	color: -moz-DialogText;
+}
+
+.selected-content-body {
+	margin-left: 25px;
+	margin-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+.subtitle {
+	margin-top: 20px;
+	color: #455a64;
+	line-height: 22px;
+}
+
+.data-pref {
+	margin-top: 30px;
+	color: #424242;
+	display: flex;
+	flex-direction: column;
+}
+
+.data-pref-item {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.data-pref-item label {
+	float:	left;
+}
+
+.data-pref-item a {
+	
+	text-decoration: none;
+	color: #424242;
+	border: 1px solid #bdbdbd;
+	padding: 5px;
+}
+
+.data-pref-item a:hover {
+	background-color: #eceff1;
+}
+
+.splitter {
+	height: 1px;
+	width: 100%;
+	background-color: #9e9e9e;
+	margin-top: 5px;
+}
+
+.ping-data-source {
+	margin-top: 16px;
+}
+
+.ping-header {
+	color: -moz-DialogText;
+}
+
+.ping-options {
+	display: flex;
+	align-items: vertical;
+	justify-content: space-between;
+	margin-top: 25px;
+	flex-wrap: wrap;
+	max-width: 500px;
+}
+
+.ping-option {
+	color: #424242;
+}
+
+.splitter-alt {
+	height: 1px;
+	width: 100%;
+	background-color: #9e9e9e;
+	margin-top: 20px;
+}
+
+.subsession-data {
+	color: #424242;
+	margin-top: 25px;
+}
+
+.parent-payload {
+	color: #424242;
+	margin-top: 20px;
+}
+
+.payload-options option {
+	color: #424242;
+}
+
+@media (max-width: 700px) {
+	.sidebar {
+		width: 0px;
+	}
+	.menu {
+		display: block;
+	}
+
+	.close {
+		display: block;
+	}
+}
